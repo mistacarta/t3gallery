@@ -22,6 +22,7 @@ export default async function HomePage() {
         {images.map((image, index) => (
           <div key={image.id + '-' + index} className="w-48 p-4">
             <img src={image.url} alt={image.name} />
+            <div>{image.name}</div>
           </div>
         ))}
       </div>
